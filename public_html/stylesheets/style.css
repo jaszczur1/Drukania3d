@@ -10,29 +10,28 @@ and open the template in the editor.
 
 @media screen and (min-width :1024px){
 
-    body{
-        /*        background-color: red;*/
-    }
+ 
     #navV{
         height: 100px;
-        text-transform:uppercase
-
+        text-transform:uppercase;
     }
     .navbar-brand{
         margin-left: 10%;
-        /*    position: relative;
-            left: 20%;*/
     }
     #navbarSupportedContent{
-        /*   position: relative;
-           left: 50%;*/
         margin-left: 50%;
     }
 }
 
+.container{
+    margin-top: 100px;
+}
+
+
 #portfolio-img{
+    position: relative;
     width: 300px;
-    background-color: red;
+    height: auto;
     padding: 20px;
     margin: 10px;
 }
@@ -46,23 +45,19 @@ and open the template in the editor.
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: 0.0s ease-out;
+    transition: 0.2s ease-out;
     background-color: #008CBA;
 }
 
-.container :hover .overlay1 {
-    opacity: 0.8;
-    width: 300px;  
-}
-
-.overlay1{
-    transition: 0.0s ease-out;
-    background-color: #008CBA;
+#portfolio-img:hover .overlay{
+    opacity: 0.9;
 
 }
 
-
-
+input{
+    display: block;
+}
+ 
 #img-lukaszek{
     max-width: 45%;
 }

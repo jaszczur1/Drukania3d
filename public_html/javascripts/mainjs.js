@@ -3,18 +3,32 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//
-//
-//
-//$('#koliber').
-
 
  $(document).ready(function (){
      
-     
-            $("#koliber").click(function (){
+              $("#home-nav").click(function (){
                 $('html, body').animate({
-                    scrollTop: $("#koliber-selection").offset().top
+                    scrollTop: $("#home-nav").offset().top +100
                 }, 2000);
             });
+            
+     
+            $("#portfolio-nav").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#portfolio-div").offset().top -100
+                }, 2000);
+            });
+            
+            $("#about-nav").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#about-div").offset().top
+                }, 1000);
+            });
+            
+             $("#contact-nav").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#contact-div").offset().top
+                }, 800);
+            });
+            
         });
