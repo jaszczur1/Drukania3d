@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 31, 2017, 7:01:08 PM
+    Author     : jaszczur
+*/
+
+@media screen and (min-width :1024px){
+
+    body{
+        /*        background-color: red;*/
+    }
+    #navV{
+        height: 100px;
+        text-transform:uppercase
+
+    }
+    .navbar-brand{
+        margin-left: 10%;
+        /*    position: relative;
+            left: 20%;*/
+    }
+    #navbarSupportedContent{
+        /*   position: relative;
+           left: 50%;*/
+        margin-left: 50%;
+    }
+}
+
+#portfolio-img{
+    width: 300px;
+    background-color: red;
+    padding: 20px;
+    margin: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.0s ease-out;
+    background-color: #008CBA;
+}
+
+.container :hover .overlay1 {
+    opacity: 0.8;
+    width: 300px;  
+}
+
+.overlay1{
+    transition: 0.0s ease-out;
+    background-color: #008CBA;
+
+}
+
+
+
+#img-lukaszek{
+    max-width: 45%;
+}
+.img-circle {
+    border-radius: 50%;
+}
