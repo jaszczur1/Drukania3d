@@ -27,6 +27,11 @@ and open the template in the editor.
     margin-top: 100px;
 }
 
+#about-div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}   
+
 
 #portfolio-img{
     position: relative;
@@ -48,6 +53,12 @@ and open the template in the editor.
     transition: 0.2s ease-out;
     background-color: #008CBA;
 }
+ #about-div{
+     background-color: #d0d5d8;
+     padding-top: 30px;
+     padding-bottom: 80px;
+  }
+
 
 #portfolio-img:hover .overlay{
     opacity: 0.9;

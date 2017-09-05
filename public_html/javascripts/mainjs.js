@@ -48,13 +48,7 @@ $(document).ready(function () {
             if (postion_dot < i)
                 $('#add-class-for-email').addClass('has-success');
             //    $('#add-class-for-email').removeClass('.has-success');
-
-
-
         }
-
-
-
     });
     $('#v').click(function () {
         $("#dialog").dialog({
