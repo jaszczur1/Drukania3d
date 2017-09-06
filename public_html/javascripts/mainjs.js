@@ -30,11 +30,26 @@ $(document).ready(function () {
             scrollTop: $("#contact-div").offset().top
         }, 800);
     });
+    
+    $("#home-nav").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#firstPage").offset().top-100
+        }, 500);
+    });
+    
+    
+     $("#Drukarnia-3D").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#firstPage").offset().top-100
+        }, 500);
+    });
+    
+    
 
     var email = [];
     var check_point;
     var postion_dot;
-    $("#inputHorizontalSuccess").keypress(function (e) {
+    $("#inputHorizontalSuccessEmail").keypress(function (e) {
 //        console.log(String.fromCharCode(e.keyCode));
         email.push(String.fromCharCode(e.keyCode));
 
@@ -50,19 +65,25 @@ $(document).ready(function () {
             //    $('#add-class-for-email').removeClass('.has-success');
         }
     });
-    $('#v').click(function () {
+    $('#portfolio-img0').click(function () {
+        
+         event.preventDefault();         
+         $('#dialog').append('<img src="images/luaszek_mini.jpg">');
+         
         $("#dialog").dialog({
-            height: 400,
-            width : 500,
+            height: 800,
+            width : 800,
+            title: "Dialog Title",
             dialogClass: "no-close",
             buttons: [
                 {
                     text: "OK",
                     click: function () {
                         $(this).dialog("close");
+                       // $(this).dialog("destroy");
                     }
                 }
-            ]
+            ], 
         });
     });
 });

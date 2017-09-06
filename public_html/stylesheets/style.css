@@ -10,7 +10,7 @@ and open the template in the editor.
 
 @media screen and (min-width :1024px){
 
- 
+
     #navV{
         height: 100px;
         text-transform:uppercase;
@@ -22,18 +22,19 @@ and open the template in the editor.
         margin-left: 50%;
     }
 }
+.title-div{
+    padding-top: 30px;
+    padding-bottom: 45px;
+    text-align: center;
+    margin: auto;
+} 
 
-.container{
-    margin-top: 100px;
+
+#about-div{ 
+    background-color: #d0d5d8;
 }
 
-#about-div{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}   
-
-
-#portfolio-img{
+.portfolio-img{
     position: relative;
     width: 300px;
     height: auto;
@@ -53,22 +54,12 @@ and open the template in the editor.
     transition: 0.2s ease-out;
     background-color: #008CBA;
 }
- #about-div{
-     background-color: #d0d5d8;
-     padding-top: 30px;
-     padding-bottom: 80px;
-  }
 
-
-#portfolio-img:hover .overlay{
+.portfolio-img:hover .overlay{
     opacity: 0.9;
 
 }
 
-input{
-    display: block;
-}
- 
 #img-lukaszek{
     max-width: 45%;
 }
