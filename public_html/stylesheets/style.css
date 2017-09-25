@@ -1,16 +1,5 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Aug 31, 2017, 7:01:08 PM
-    Author     : jaszczur
-*/
-
 @media screen and (min-width :1024px){
-
-
+        
     #navV{
         height: 100px;
         text-transform:uppercase;
@@ -22,6 +11,26 @@ and open the template in the editor.
         margin-left: 50%;
     }
 }
+
+#main{
+ background-color: #d0d5d8;
+ text-align: center;
+
+ padding-top: 200px;
+ padding-bottom: 120px;
+}
+
+#img-main{
+    width: 100%;
+    height: 400px;
+}
+#text-main1{
+   padding-top: 100px;
+}
+
+
+
+
 .title-div{
     padding-top: 30px;
     padding-bottom: 45px;
@@ -29,10 +38,6 @@ and open the template in the editor.
     margin: auto;
 } 
 
-
-#about-div{ 
-    background-color: #d0d5d8;
-}
 
 .portfolio-img{
     position: relative;
@@ -55,14 +60,23 @@ and open the template in the editor.
     background-color: #008CBA;
 }
 
-.portfolio-img:hover .overlay{
+.portfolio-img:hover .overlay {
     opacity: 0.9;
-
 }
 
-#img-lukaszek{
-    max-width: 45%;
-}
 .img-circle {
-    border-radius: 50%;
+    border-radius: 80%;
 }
+.img-script{
+    width: 100%;
+}
+.img-overlay{
+   width: 100%;
+}
+
+
+#about-div{ 
+    background-color: #d0d5d8;
+}
+
+
