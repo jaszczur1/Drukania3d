@@ -1,6 +1,6 @@
 @media screen and (min-width :1024px){
         
-    #navV{
+/*    #navV{
         height: 100px;
         text-transform:uppercase;
     }
@@ -9,7 +9,8 @@
     }
     #navbarSupportedContent{
         margin-left: 50%;
-    }
+    } 
+    */
 }
 
 #main{
@@ -27,9 +28,6 @@
 #text-main1{
    padding-top: 100px;
 }
-
-
-
 
 .title-div{
     padding-top: 30px;
@@ -73,7 +71,6 @@
 .img-overlay{
    width: 100%;
 }
-
 
 #about-div{ 
     background-color: #d0d5d8;

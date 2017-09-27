@@ -30,21 +30,21 @@ $(document).ready(function () {
             scrollTop: $("#contact-div").offset().top
         }, 800);
     });
-    
+
     $("#home-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#firstPage").offset().top-100
+            scrollTop: $("#firstPage").offset().top - 100
         }, 500);
     });
-    
-    
-     $("#Drukarnia-3D").click(function () {
+
+
+    $("#Drukarnia-3D").click(function () {
         $('html, body').animate({
-            scrollTop: $("#firstPage").offset().top-100
+            scrollTop: $("#firstPage").offset().top - 100
         }, 500);
     });
-    
-    
+
+
     var email = [];
     var check_point;
     var postion_dot;
@@ -65,56 +65,72 @@ $(document).ready(function () {
         }
     });
     $('#portfolio-img0').click(function () {
-       
-         event.preventDefault();         
-         $('#dialog').append('<img src="images/3d/temp0.jpg" class="img-script">');
-         
+
+        $('#dialog').append('<img src="images/3d/temp0.jpg" class="img-script">');
+
         $("#dialog").dialog({
-            width : 800,
+
+            modal: true,
+            show: {
+                effect: "blind",
+                duration: 600
+            },
+            hide: {
+                effect: "explode",
+                duration: 400
+            },
+
+            width: 800,
             height: 650,
-            title: "Dialog Title",
+            title: "zabon",
             dialogClass: "no-close",
             buttons: [
                 {
                     text: "OK",
                     click: function () {
                         $(this).dialog("close");
-                       // $(this).dialog("destroy");
+                        $(this).dialog("destroy");
                     }
                 }
-            ], 
+            ],
         });
     });
-    
+
     $('#portfolio-img1').click(function () {
-       
-         event.preventDefault();         
-         $('#dialog').append('<img src="images/3d/temp1.jpg" class="img-script">');
-         
-        $("#dialog").dialog({
-            width : 800,
+
+        $('#dialog0').append('<img src="images/3d/temp1.jpg" class="img-script">  <br><br>  <div>- Materiał: PLA (niebieska), ABS (czerwona)</div>\n\
+ <div>- Wysokość warstwy 0,2 mm</div>\n\
+ <div> - Wypełnienie 25%</div>');
+
+        $("#dialog0").dialog({
+
+//            open: function () {
+//                var markup = 'Hello World';
+//                $(this).html(markup);
+//            },
+            width: 800,
             height: 650,
             title: "Dialog Title",
             dialogClass: "no-close",
-            buttons: [
-                {
-                    text: "OK",
-                    click: function () {
-                        $(this).dialog("close");
-                       // $(this).dialog("destroy");
-                    }
-                }
-            ], 
+//            buttons: [
+//                {
+//                    text: "OK",
+//                    click: function () {
+//                    //    $(this).dialog("close");
+//                        $(this).dialog("destroy");
+//                    }
+//                }
+//            ],
         });
     });
-    
+
     $('#portfolio-img2').click(function () {
-       
-         event.preventDefault();         
-         $('#dialog').append('<img src="images/3d/temp2.jpg" class="img-script">');
-         
+
+        event.preventDefault();
+        $('#dialog').append('<img src="images/3d/temp2.jpg" class="img-script">');
+
         $("#dialog").dialog({
-            width : 800,
+            width: 800,
             height: 650,
             title: "Dialog Title",
             dialogClass: "no-close",
@@ -123,20 +139,20 @@ $(document).ready(function () {
                     text: "OK",
                     click: function () {
                         $(this).dialog("close");
-                       // $(this).dialog("destroy");
+                        // $(this).dialog("destroy");
                     }
                 }
-            ], 
+            ],
         });
     });
-    
+
     $('#portfolio-img3').click(function () {
-       
-         event.preventDefault();         
-         $('#dialog').append('<img src="images/3d/temp3.jpg" class="img-script">');
-         
+
+        event.preventDefault();
+        $('#dialog').append('<img src="images/3d/temp3.jpg" class="img-script">');
+
         $("#dialog").dialog({
-            width : 800,
+            width: 800,
             height: 650,
             title: "Dialog Title",
             dialogClass: "no-close",
@@ -145,21 +161,21 @@ $(document).ready(function () {
                     text: "OK",
                     click: function () {
                         $(this).dialog("close");
-                       // $(this).dialog("destroy");
+                        // $(this).dialog("destroy");
                     }
                 }
-            ], 
+            ],
         });
     });
-    
-    
+
+
     $('#portfolio-img4').click(function () {
-       
-         event.preventDefault();         
-         $('#dialog').append('<img src="images/3d/temp4.jpg" class="img-script">');
-         
+
+        event.preventDefault();
+        $('#dialog').append('<img src="images/3d/temp4.jpg" class="img-script">');
+
         $("#dialog").dialog({
-            width : 800,
+            width: 800,
             height: 650,
             title: "Dialog Title",
             dialogClass: "no-close",
@@ -168,21 +184,21 @@ $(document).ready(function () {
                     text: "OK",
                     click: function () {
                         $(this).dialog("close");
-                       // $(this).dialog("destroy");
+                        // $(this).dialog("destroy");
                     }
                 }
-            ], 
+            ],
         });
     });
-    
-    
+
+
     $('#portfolio-img5').click(function () {
-       
-         event.preventDefault();         
-         $('#dialog').append('<img src="images/3d/temp5.jpg" class="img-script">');
-         
+
+        event.preventDefault();
+        $('#dialog').append('<img src="images/3d/temp5.jpg" class="img-script">');
+
         $("#dialog").dialog({
-            width : 800,
+            width: 800,
             height: 650,
             title: "Dialog Title",
             dialogClass: "no-close",
@@ -191,13 +207,13 @@ $(document).ready(function () {
                     text: "OK",
                     click: function () {
                         $(this).dialog("close");
-                       // $(this).dialog("destroy");
+                        // $(this).dialog("destroy");
                     }
                 }
-            ], 
+            ],
         });
     });
-    
+
 });
 
 
