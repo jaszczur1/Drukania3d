@@ -25,11 +25,11 @@ $(document).ready(function () {
         }, 1000);
     });
 
-    $("#contact-nav").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#contact-div").offset().top
-        }, 800);
-    });
+//    $("#contact-nav").click(function () {
+//        $('html, body').animate({
+//            scrollTop: $("#contact-div").offset().top
+//        }, 800);
+//    });
 
     $("#home-nav").click(function () {
         $('html, body').animate({
@@ -38,11 +38,11 @@ $(document).ready(function () {
     });
 
 
-    $("#Drukarnia-3D").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#firstPage").offset().top - 100
-        }, 500);
-    });
+//    $("#Drukarnia-3D").click(function () {
+//        $('html, body').animate({
+//            scrollTop: $("#firstPage").offset().top - 100
+//        }, 500);
+//    });
 
 
     var email = [];
@@ -213,6 +213,39 @@ $(document).ready(function () {
             ],
         });
     });
+
+
+    $('#contact-nav').click(function () {
+
+        event.preventDefault();
+        $('#dialog').append('<div class="form-group row" id="add-class-for-email">');
+        $('#dialog').append('<label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Email</label>');
+        $('#dialog').append('<div class="col-md-10">');
+        $('#dialog').append('<input type="email" class="form-control form-control-success" id="inputHorizontalSuccessEmail" placeholder="name@example.com">')
+        $('#dialog').append('<div class="form-control-feedback">Ok email.</div>');
+        $('#dialog').append('<div class="form-control-feedback">Ok email.</div>');
+
+        $('#dialog').append('</div>');
+        $('#dialog').append('</div>');
+
+        $("#dialog").dialog({
+            width: 800,
+            height: 650,
+            title: "Dialog Title",
+            dialogClass: "no-close",
+            buttons: [
+                {
+                    text: "OK",
+                    click: function () {
+                        $(this).dialog("close");
+                        // $(this).dialog("destroy");
+                    }
+                }
+            ],
+        });
+    });
+
+
 
 });
 
