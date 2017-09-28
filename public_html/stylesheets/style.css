@@ -13,6 +13,8 @@
     */
 }
 
+
+
 #main{
  background-color: #d0d5d8;
  text-align: center;
@@ -71,9 +73,14 @@
 .img-overlay{
    width: 100%;
 }
-
-#about-div{ 
+#table{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #d0d5d8;
 }
-
+#about-div{
+    padding-bottom:  80px;
+}
 

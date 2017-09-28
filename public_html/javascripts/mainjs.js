@@ -215,33 +215,43 @@ $(document).ready(function () {
     });
 
 
+
+
     $('#contact-nav').click(function () {
 
-        event.preventDefault();
-        $('#dialog').append('<div class="form-group row" id="add-class-for-email">');
-        $('#dialog').append('<label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Email</label>');
-        $('#dialog').append('<div class="col-md-10">');
-        $('#dialog').append('<input type="email" class="form-control form-control-success" id="inputHorizontalSuccessEmail" placeholder="name@example.com">')
-        $('#dialog').append('<div class="form-control-feedback">Ok email.</div>');
-        $('#dialog').append('<div class="form-control-feedback">Ok email.</div>');
 
-        $('#dialog').append('</div>');
-        $('#dialog').append('</div>');
+        event.preventDefault();
+
+
+        $('#dialog').append('<div class="form-group row" id="add-class-for-email">\n\
+<label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Email</label>\n\
+<div class="col-md-10">\n\
+ <input type="email" class="form-control form-control-success" id="inputHorizontalSuccessEmail" placeholder="name@example.com">\n\
+ <div class="form-control-feedback">Ok email.</div>\n\
+  </div>\n\
+  </div>\n\
+\n\
+<div class="form-group row">\n\
+<label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Numer tel</label>\n\
+<div class="col-md-10">\n\
+<input type="tel" class="form-control form-control-success" id="inputHorizontalSuccess_telephone">\n\
+ <div class="form-control-feedback">Success! You heve done it.</div>\n\
+</div>\n\
+</div>\n\
+</div>\n\
+<div class="form-group">\n\
+<label for="comment">Wiadomość:</label>\n\
+<textarea class="form-control" rows="5" id="comment"></textarea>\n\
+ </div>\n\
+\n\
+<button class="btn btn-primary">Wyslij</button>')
 
         $("#dialog").dialog({
             width: 800,
-            height: 650,
+            height: 450,
             title: "Dialog Title",
             dialogClass: "no-close",
-            buttons: [
-                {
-                    text: "OK",
-                    click: function () {
-                        $(this).dialog("close");
-                        // $(this).dialog("destroy");
-                    }
-                }
-            ],
+
         });
     });
 
