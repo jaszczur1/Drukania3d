@@ -89,6 +89,6 @@
 this is bootstap website
 */
 
-.no-close .ui-dialog-titlebar-close {
-    display: none;
-}
+ .ui-dialog-titlebar-close {
+     display: none;
+ }

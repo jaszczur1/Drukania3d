@@ -6,12 +6,17 @@
 
 $(document).ready(function () {
 
+    // $("#home-nav").click(function () {
+    //     $('html, body').animate({
+    //         scrollTop: $("#home-nav").offset().top + 100
+    //     }, 2000);
+    // });
+
     $("#home-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#home-nav").offset().top + 100
-        }, 2000);
+            scrollTop: $("#firstPage").offset().top - 100
+        }, 1500);
     });
-
 
     $("#portfolio-nav").click(function () {
         $('html, body').animate({
@@ -19,11 +24,19 @@ $(document).ready(function () {
         }, 2000);
     });
 
-    $("#about-nav").click(function () {
+    $("#offer-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#about-div").offset().top
+            scrollTop: $("#offer-div").offset().top -120
         }, 1000);
     });
+
+    $("#table-nav").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#table-div").offset().top -140
+        }, 1000);
+    });
+
+
 
 //    $("#contact-nav").click(function () {
 //        $('html, body').animate({
@@ -31,11 +44,6 @@ $(document).ready(function () {
 //        }, 800);
 //    });
 
-    $("#home-nav").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#firstPage").offset().top - 100
-        }, 500);
-    });
 
 
 //    $("#Drukarnia-3D").click(function () {
@@ -45,31 +53,38 @@ $(document).ready(function () {
 //    });
 
 
-    var email = [];
-    var check_point;
-    var postion_dot;
-    $("#inputHorizontalSuccessEmail").keypress(function (e) {
-//        console.log(String.fromCharCode(e.keyCode));
-        email.push(String.fromCharCode(e.keyCode));
+//     var email = [];
+//     var check_point;
+//     var postion_dot;
+//     $("#inputHorizontalSuccessEmail").keypress(function (e) {
+// //        console.log(String.fromCharCode(e.keyCode));
+//         email.push(String.fromCharCode(e.keyCode));
+//
+//         for (var i = 0; i < email.length; i++) {
+//             console.log(email);
+//             if (email[i] == '@' && i > 0)
+//                 check_point = true; // bool position @
+//             if (check_point == true && email[i] == '.') {
+//                 postion_dot = i;
+//             }
+//             if (postion_dot < i)
+//                 $('#add-class-for-email').addClass('has-success');
+//             //    $('#add-class-for-email').removeClass('.has-success');
+//         }
+//     });
 
-        for (var i = 0; i < email.length; i++) {
-            console.log(email);
-            if (email[i] == '@' && i > 0)
-                check_point = true; // bool position @            
-            if (check_point == true && email[i] == '.') {
-                postion_dot = i;
-            }
-            if (postion_dot < i)
-                $('#add-class-for-email').addClass('has-success');
-            //    $('#add-class-for-email').removeClass('.has-success');
-        }
-    });
+
+
+
+
     $('#portfolio-img0').click(function () {
 
         $('#dialog0').append('<div id="to-remove"> <img src="images/3d/temp0.jpg" class="img-script"><div>tu piszesz text do zabona</div></div>');
 
         $("#dialog0").dialog({
 
+
+            dialogClass: "no-close",
             draggable: false,
             modal: true,
             show: {
@@ -78,7 +93,7 @@ $(document).ready(function () {
             },
             hide: {
                 effect: "explode",
-                duration: 400
+                duration:1000
             },
 
             width: 800,
@@ -90,7 +105,7 @@ $(document).ready(function () {
                     text: "OK",
                     click: function () {
                         $('#to-remove').remove();
-                        $(this).dialog("destroy");
+                        $(this).dialog("close");
 
                     }
                 }
@@ -104,13 +119,19 @@ $(document).ready(function () {
 
         $("#dialog1").dialog({
 
-//            open: function () {
-//                var markup = 'Hello World';
-//                $(this).html(markup);
-//            },
 
             draggable: false,
             modal: true,
+            show: {
+                effect: "blind",
+                duration: 600
+            },
+
+            hide: {
+                effect: "fade",
+                duration: 600
+            },
+
             width: 800,
             height: 650,
             title: "Dialog Title",
@@ -119,8 +140,8 @@ $(document).ready(function () {
                {
                    text: "OK",
                    click: function () {
-                   //    $(this).dialog("close");
-                       $(this).dialog("destroy");
+                      $(this).dialog("close");
+                     //  $(this).dialog("destroy");
                        $('#to-remove').remove();
                    }
                }
@@ -135,6 +156,18 @@ $(document).ready(function () {
         $("#dialog2").dialog({
             draggable: false,
             modal: true,
+
+            show: {
+                effect: "blind",
+                duration: 600
+            },
+
+            hide: {
+                effect: "puff",
+                duration: 600
+            },
+
+
             width: 800,
             height: 650,
             title: "Dialog Title",
@@ -143,8 +176,9 @@ $(document).ready(function () {
                 {
                     text: "OK",
                     click: function () {
+                        $(this).dialog("close");
                         $('#to-remove').remove();
-                         $(this).dialog("destroy");
+                     //    $(this).dialog("destroy");
                     }
                 }
             ],
@@ -159,6 +193,14 @@ $(document).ready(function () {
 
             draggable: false,
             modal: true,
+
+            hide: {
+                effect: "shake",
+                duration: 600
+            },
+
+
+
             width: 800,
             height: 650,
             title: "Dialog Title",
@@ -168,7 +210,8 @@ $(document).ready(function () {
                     text: "OK",
                     click: function () {
                         $('#to-remove').remove();
-                         $(this).dialog("destroy");
+                      //   $(this).dialog("destroy");
+                        $(this).dialog("close");
                     }
                 }
             ],
@@ -183,6 +226,11 @@ $(document).ready(function () {
         $("#dialog4").dialog({
             draggable: false,
             modal: true,
+
+            hide: {
+                effect: "slide",
+                duration: 600
+            },
             width: 800,
             height: 650,
             title: "Advent!!Adven-teszek",
@@ -192,7 +240,8 @@ $(document).ready(function () {
                     text: "OK",
                     click: function () {
                        // $(this).dialog("close");
-                         $(this).dialog("destroy");
+                      //   $(this).dialog("destroy");
+                        $(this).dialog("close");
                         $('#to-remove').remove();
                     }
                 }
@@ -216,8 +265,8 @@ $(document).ready(function () {
                 {
                     text: "OK",
                     click: function () {
-                       // $(this).dialog("close");
-                         $(this).dialog("destroy");
+                       $(this).dialog("close");
+                       //  $(this).dialog("destroy");
                         $('#to-remove').remove();
                     }
                 }
@@ -230,8 +279,21 @@ $(document).ready(function () {
 
     $('#quotation-nav').click(function () {
 
-        $('#quotation').append('tekst bedziesz pisał w pliku mainjs.js');
+        var position;
 
+        $('#quotation').append('<div id="to-remove">Wycena!!! </div>');
+
+     var get_position =  $(document).mousemove( function (event) {
+            position = event.pageY;
+
+        });
+        //     $('html, body').animate({
+        //         scrollTop: $("#portfolio-div").offset().top - 120
+        //     }, 2000);
+        // });
+
+
+  // alert(get_position)
         //
         // $('#dialog-email').append('to bedziesz pisał')
 //         <div class="form-group row" id="add-class-for-email">\n\
@@ -258,13 +320,30 @@ $(document).ready(function () {
 // <button class="btn btn-primary">Wyslij</button>')
 
         $("#quotation").dialog({
+
+
+            position: { my: get_position+100,},
+
+            draggable: false,
+            modal: true,
             width: 800,
-            height: 450,
+            height: 650,
             title: "Dialog Title",
             dialogClass: "no-close",
+            buttons: [
+                {
+                    text: "OK",
+                    click: function () {
+                        $(this).dialog("close");
+                        //  $(this).dialog("destroy");
+                        $('#to-remove').remove();
+                    }
+                }
+            ],
 
         });
     });
+
 
 
 
