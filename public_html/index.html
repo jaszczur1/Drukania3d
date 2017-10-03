@@ -5,366 +5,358 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>TechDayEveryDay</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>TechDayEveryDay</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
-        <script src="bower_components/tether/dist/js/tether.min.js"></script>
-        <link href="bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet">
-        <script src="bower_components/bootstrap/dist/js/bootstrap.js" type=text/javascript></script>
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js" type=text/javascript></script>
 
-        <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/blitzer/jquery-ui.min.css">
 
-        <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
 
-        <script src="javascripts/mainjs.js" type="text/javascript"></script>
-        <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-
-
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" style="background-color: #5cb3fd" id="navV">
-
-            <div class="navbar-brand">
-                <img src="images/3d/logo.png" alt="" style="width: 60%;">
-            </div>  
+    <script src="javascripts/mainjs.js" type="text/javascript"></script>
+    <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
 
 
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" style="background-color: #5cb3fd" id="navV">
 
-            
-            
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav mr-auto" style="position: relative; left: 45%">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id="home-nav">Home<span class="sr-only">(current)</span></a>
-                    </li >
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id="portfolio-nav">Przykładowe realizacje</a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id="about-nav">Oferta</a>
-                    </li>
-			 <li class="nav-item active">
-                        <a class="nav-link" href="#" id="about-nav">Tabela materiałów</a>
-                    </li>
+    <div class="navbar-brand">
+        <img src="images/3d/logo.png" alt="" style="width: 60%;">
+    </div>
 
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id="contact-nav">Wycena</a>
-                    </li>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                </ul>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active mr-md-5">
+                <a class="nav-link" href="#" id="home-nav">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active ml-0">
+                <a class="nav-link" href="#" id="portfolio-nav">Przykładowe realizacje</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="#" id="about-nav">Oferta</a>
+            </li>
+            <li class="nav-item active mr-auto">
+                <a class="nav-link" href="#" id="about-nav">Tabela materiałów</a>
+            </li>
+
+
+            <li class="nav-item active mr-auto">
+                <a class="nav-link" href="#" id="quotation-nav">Wycena</a>
+                <div id="quotation"></div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+<section id="firstPage">
+    <div class="container-fluid" id="main">
+        <div class="row">
+            <img src="images/3d/glowne.jpg" id="img-main">
+        </div>
+
+        <div id="text-main1"><h1>Projekt modeli 3D - Wydruk</h1></div>
+
+    </div>
+</section>
+
+
+<section id="portfolio">
+
+    <div class="container" id="portfolio-div">
+        <div class="row">
+            <h1 class="title-div">Przykładowe realizacje:</h1>
+        </div>
+
+        <div class="row" style="justify-content:center; height: auto;">
+
+            <div id="portfolio-img0" class="portfolio-img">
+
+                <div class="overlay">
+                    <img src="images/3d/lupa.png" style="width: 20%; margin-top: 20%; margin-left: 40%;">
+
+                    <div id="dialog0"></div>
+
+                </div>
+
+                <img src="images/3d/temp0.jpg" class="img-fluid">
             </div>
-                
-            
-        </nav>        
 
-
-        <section id="firstPage">
-            <div class="container-fluid" id="main">
-                <div class="row">
-                    <img src="images/3d/glowne.jpg" id="img-main">                         
+            <div id="portfolio-img1" class="portfolio-img">
+                <div class="overlay">
+                    <img src="images/3d/lupa.png" style="width: 20%; margin-top: 20%; margin-left: 40%;">
+                    <div id="dialog1"></div>
                 </div>
 
-                <div id="text-main1"><h1>Projekt modeli 3D - Wydruk</h1></div>
-                
+                <img src="images/3d/temp1.jpg" class="img-fluid ">
+
             </div>
-        </section>
 
+            <div id="portfolio-img2" class="portfolio-img">
+                <div class="overlay">
+                    <img src="images/3d/lupa.png" style="width: 20%; margin-top: 20%; margin-left: 40%;">
+                    <div id="dialog2"></div>
+                </div>
+                <img src="images/3d/temp2.jpg" class="img-fluid">
+            </div>
 
+        </div>
 
-        <section id="portfolio">
+        <div class="container">
+            <div class="row" style="justify-content:center; height: auto;">
+                <div id="portfolio-img3" class="portfolio-img">
 
-            <div class="container" id="portfolio-div">
-                <div class="row">
-                    <h1 class="title-div">Przykładowe realizacje:</h1>
+                    <div class="overlay">
+                        <img src="images/3d/lupa.png" style="width: 20%; margin-top: 20%; margin-left: 40%;">
+                        <div id="dialog3"></div>
+                    </div>
+
+                    <img src="images/3d/temp3.jpg" class="img-fluid">
                 </div>
 
-                <div class="row" style="justify-content:center; height: auto;">
 
-                    <div id="portfolio-img0" class="portfolio-img">
-
-                        <div class="overlay">
-                            <img src="images/3d/lupa.png" style="width: 20%; margin-top: 20%; margin-left: 40%;">
-
-                            <div id="dialog0"></div>
-
-                        </div>
-
-                        <img src="images/3d/temp0.jpg" class="img-fluid">
+                <div id="portfolio-img4" class="portfolio-img">
+                    <div class="overlay">
+                        <img src="images/3d/lupa.png" style="width: 20%; margin-top: 20%; margin-left: 40%;">
+                        <div id="dialog4"></div>
                     </div>
+                    <img src="images/3d/temp4.jpg" class="img-fluid"></div>
 
-                    <div id="portfolio-img1" class="portfolio-img">
-                        <div class="overlay">
-                            <div id="dialog"></div>
-                        </div>
 
-                        <img src="images/3d/temp1.jpg" class="img-fluid ">
+                <div id="portfolio-img5" class="portfolio-img">
 
+                    <div class="overlay">
+                        <img src="images/3d/lupa.png" style="width: 20%; margin-top: 20%; margin-left: 40%;">
+                        <div id="dialog5"></div>
                     </div>
+                    <img src="images/3d/temp5.jpg" class="img-fluid"></div>
 
-                    <div id="portfolio-img2" class="portfolio-img">
-                        <div class="overlay">
-                            <div id="dialog"></div>
-                        </div>
-                        <img src="images/3d/temp2.jpg" class="img-fluid">
-                    </div>
+            </div>
+        </div>
 
-                </div>
-
-                <div class="container">
-                    <div class="row" style="justify-content:center; height: auto;">                        
-                        <div id="portfolio-img3" class="portfolio-img">
-
-                            <div class="overlay">
-                                <div id="dialog"></div>
-                                <span class="">s</span>
-                            </div>
-
-                            <img src="images/3d/temp3.jpg" class="img-fluid">
-                        </div>
+    </div>
+</section>
 
 
-                        <div  id="portfolio-img4" class="portfolio-img">
-                            <div class="overlay">
-                                <div id="dialog"></div>
-                            </div>
-                            <img src="images/3d/temp4.jpg" class="img-fluid"></div>
+<section id="about-div">
+
+    <div class="container">
+
+        <div class="row">
+
+            <h1 class="title-div">Oferta</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                Najważniejszy jest Twój pomysł – od tego wszystko się zaczyna.
+                Przelej go na papier, a my zajmiemy się resztą.
+                Możemy narysować interesujący Cię model 3D na podstawie Twoich zwymiarowanych szkiców.
+                Możesz przesłać nam przedmiot, który chcesz skopiować – odwzorujemy go. Gotowy plik dla Ciebie jest
+                zawsze w formacie stl.
+                A może masz już model 3D? Chcesz go wydrukować – dobrze trafiłeś, wyślij nam Twój plik stl.
+                W naszej pracowni posiadamy cztery drukarki 3D: Zortrax m200, Da Vinci PRO 1.0, oraz dwie drukarki
+                własnego projektu.
+                Dzięki dużym mocom przerobowym, posiadamy konkurencyjne ceny wydruków 3D, oraz krótkie czasy realizacji
+                zamówień.
+                Serdecznie zapraszamy do kontaktu – na pewno będziesz pozytywnie zaskoczony niską wyceną.
+            </div>
 
 
-                        <div  id="portfolio-img5" class="portfolio-img">
+            <div class="col-md-6">
+                Cena wydruku zależna jest od wielu czynników i zawsze ustalana jest indywidualnie.
+                Najważniejsze kryteria wyceny to czas wydruku, ilość potrzebnego materiału, rodzaj materiału, prędkość
+                wydruku oraz wypełnienie.
+                Prędkość wydruku jest zmniejszana dla modeli posiadających wiele małych detali.
+                W ten sposób możliwe jest dokładniejsze odwzorowanie modelu 3D.
+                Dostępne wysokości warstwy wydruku: od 0,1 do 0,4 mm.
+                Maksymalny rozmiar wydruku to 200x200x200mm.
 
-                            <div class="overlay">
-                                <div id="dialog"></div>
-                            </div>
-                            <img src="images/3d/temp5.jpg" class="img-fluid"></div>
-
-                    </div>
-                </div>
-
-            </div>      
-        </section>
-
-      
+                Nic nie stoi na przeszkodzie, aby zrealizować wydruk większego modelu, wystarczy podzielić go na
+                mniejsze części i zmontować po wydruku.
+                Każdy większy model można również przeskalować do mniejszych wymiarów, ograniczeniem jest tylko Twoja
+                wyobraźnia.
+                Nie wiesz jakiego materiału użyć?
+                Zastanawiasz się nad parametrami wydruku?
+                Sprawdź naszą tabelę materiałów.
+            </div>
 
 
-        <section id="about-div">
+        </div>
+    </div>
+</section>
+
+
+<section id="table">
+
+    <h1 class="title-div">Tabela materiałów</h1>
+
+    <div class="container">
+        <div class="row">
+            <table class="table table-responsive">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Materiał</th>
+                    <th>Właściwości</th>
+                    <th>Zastosowanie</th>
+
+                </tr>
+
+
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td>PLA</td>
+                    <td>- Odporność na temperaturę do 60°C<br/>
+                        - zalecana prędkość wydruku: 20 - 140 mm/s <br/>
+                        - zalecane wypełnienie modelu: 20 - 70% (zależnie od wielkości modelu) <br/>
+                        - bardzo sztywny - przyłożenie dużej siły powoduje złamanie (nie wygięcie) <br/>
+                        - preferowana wielkość modelu: bez ograniczeń <br/>
+                        - mały współczynnik rozszerzalności cieplnej<br/>
+                        - połysk <br/>
+                        - dopuszczony do kontaktu z żywnością<br/>
+                        - 100% biodegradowalny<br/>
+                        - stopień trudności druku: łatwy<br/>
+
+
+                    </td>
+                    <td>
+
+                        Głównie modele prototypowe (ze względu na szybki czas wydruku). <br/>
+                        Wykorzystywany jest tam, gdzie elementy ulegają częstym urazom mechanicznym – modele RC, drony.
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>ABS</td>
+                    <td>
+
+
+                        - Odporność na temperaturę do 90°C<br/>
+                        - zalecana prędkość wydruku: 20 - 60 mm/s <br/>
+                        - zalecane wypełnienie modelu: 15 - 70% (zależnie od wielkości modelu) <br/>
+                        - sztywny - przyłożenie dużej siły powoduje wygięcie (nie złamanie) <br/>
+                        - preferowana wielkość modelu: poniżej 60 mm w każdej osi <br/>
+                        - duży (około 2%) współczynnik rozszerzalności cieplnej<br/>
+                        - matowy <br/>
+                        - stopień trudności druku: trudny<br/>
+
+
+                    </td>
+                    <td>
+
+                        Prekursor w druku 3D. Niestety przez jego negatywne właściwości <br/>
+                        (kurczliwość podczas stygnięcia) nadaje się tylko do modeli, <br/>
+                        których dokładność wydruku nie jest kluczowym parametrem. <br/>
+                        Jego największa zaleta to odporność na wysoka temperaturę. <br/>
+                        Zastosowanie go w mniejszych modelach (do 60 mm) sprawia, <br/>
+                        że kurczliwość staje się pomijalna. Bardzo ważnym atutem ABS jest to, <br/>
+                        że po wydruku można poddać go kąpieli w oparach acetonu technicznego. <br/>
+                        Dzięki temu wierzchnia warstwa roztapia się delikatnie, <br/>
+                        tworząc odporna skorupę, co sprawia, że nie widać kolejnych linii druku.<br/>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>PET-G</td>
+                    <td>
+
+
+                        - Odporność na temperaturę do 80°C<br/>
+                        - zalecana prędkość wydruku: 20 - 60 mm/s <br/>
+                        - zalecane wypełnienie modelu: 15 - 70% (zależnie od wielkości modelu) <br/>
+                        - sztywny - przyłożenie dużej siły powoduje wygięcie (nie złamanie) <br/>
+                        - preferowana wielkość modelu: bez ograniczeń <br/>
+                        - mały współczynnik rozszerzalności cieplnej<br/>
+                        - transparentny połysk <br/>
+                        - duża odporność chemiczna<br/>
+                        - dopuszczony do kontaktu z żywnością<br/>
+                        - stopień trudności druku: średni<br/>
+                    </td>
+                    <td>
+
+                        Łączy zalety PLA i ABS. <br/>
+                        Idealny do wszelkiego rodzaju modeli. <br/>
+                        Jest materiałem najdroższym z tego zestawienia.<br/>
+
+
+                    </td>
+
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</section>
+
+
+<!--        <section id="contact-div">
 
             <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="title-div">
+                            <h1>Kontakt</h1> </div>
+                    </div>
+                    <div class="row">
 
-                <div class="row">
+                        <div class="form-group row" id="add-class-for-email">
+                            <label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control form-control-success" id="inputHorizontalSuccessEmail" placeholder="name@example.com">
+                                <div class="form-control-feedback">Ok email.</div>
 
-                    <h1 class="title-div">Oferta</h1> 
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        Najważniejszy jest Twój pomysł – od tego wszystko się zaczyna. 
-			Przelej go na papier, a my zajmiemy się resztą. 
-			Możemy narysować interesujący Cię model 3D na podstawie Twoich zwymiarowanych szkiców.  
-			Możesz przesłać nam przedmiot, który chcesz skopiować – odwzorujemy go. Gotowy plik dla Ciebie jest zawsze w formacie stl. 
-			A może masz już model 3D?  Chcesz go wydrukować – dobrze trafiłeś, wyślij nam Twój plik stl. 
-			W naszej pracowni posiadamy cztery drukarki 3D:  Zortrax m200, Da Vinci PRO 1.0,  oraz dwie drukarki własnego projektu. 
-			Dzięki dużym mocom przerobowym, posiadamy konkurencyjne ceny wydruków 3D, oraz krótkie czasy realizacji zamówień. 
-			Serdecznie zapraszamy do kontaktu – na pewno będziesz pozytywnie zaskoczony niską wyceną. 
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group row">
+                            <label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Numer tel</label>
+                            <div class="col-md-10">
+                                <input type="tel" class="form-control form-control-success" id="inputHorizontalSuccess_telephone">
+                                <div class="form-control-feedback">Success! You've done it.</div>
+                            </div>
+                        </div>
                     </div>
 
-
-
-
-
-
-                    <div class="col-md-6">
-			Cena wydruku zależna jest od wielu czynników i zawsze ustalana jest indywidualnie. 
-Najważniejsze kryteria wyceny to czas wydruku, ilość potrzebnego materiału, rodzaj materiału, prędkość wydruku oraz wypełnienie. 
-Prędkość wydruku jest zmniejszana dla modeli posiadających wiele małych detali. 
-W ten sposób możliwe jest dokładniejsze odwzorowanie modelu 3D. 
-Dostępne wysokości warstwy wydruku: od 0,1 do 0,4 mm.
-Maksymalny rozmiar wydruku to 200x200x200mm. 
-
-Nic nie stoi na przeszkodzie, aby zrealizować wydruk większego modelu, wystarczy podzielić go na mniejsze części  i zmontować po wydruku. 
-Każdy większy model można również przeskalować do mniejszych wymiarów, ograniczeniem jest tylko Twoja wyobraźnia.  
-Nie wiesz jakiego materiału użyć? 
-Zastanawiasz się nad parametrami wydruku?  
-Sprawdź naszą tabelę materiałów.
+                    <div class="form-group">
+                        <label for="comment">Wiadomość:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
                     </div>
 
+                    <button class="btn btn-primary">Wyslij</button>
 
-
-                </div>
-            </div>         
-        </section>
-
-
-  <section id="table">
-
-                 <h1 class="title-div">Tabela materiałów</h1> 
-            
-            <div class="container">
-                <div class="row">            
-                    <table class="table table-responsive">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Materiał</th>
-                                <th>Właściwości</th>
-                                <th>Zastosowanie</th>
-
-                            </tr>
-
-
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>PLA</td>
-                                <td>- Odporność na temperaturę do 60°C<br />
-					- zalecana prędkość wydruku: 20 - 140 mm/s <br />
-					- zalecane wypełnienie modelu: 20 - 70% (zależnie od wielkości modelu) <br />
-					- bardzo sztywny - przyłożenie dużej siły powoduje złamanie (nie wygięcie) <br />
-					- preferowana wielkość modelu: bez ograniczeń <br />
-					- mały współczynnik rozszerzalności cieplnej<br />
-					- połysk <br />
-					- dopuszczony do kontaktu z żywnością<br />
-					- 100% biodegradowalny<br />
-					- stopień trudności druku: łatwy<br />
-
-
-</td>
-                                <td>
-
-Głównie modele prototypowe (ze względu na szybki czas wydruku). <br />
-Wykorzystywany jest tam, gdzie elementy ulegają częstym urazom mechanicznym – modele RC, drony.
-
-
-</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>ABS</td>
-                                <td>
-
-
-					- Odporność na temperaturę do 90°C<br />
-					- zalecana prędkość wydruku: 20 - 60 mm/s <br />
-					- zalecane wypełnienie modelu: 15 - 70% (zależnie od wielkości modelu) <br />
-					- sztywny - przyłożenie dużej siły powoduje wygięcie (nie złamanie) <br />
-					- preferowana wielkość modelu: poniżej 60 mm w każdej osi <br />
-					- duży (około 2%) współczynnik rozszerzalności cieplnej<br />
-					- matowy <br />
-					- stopień trudności druku: trudny<br />
-
-
-
-
-</td>
-                                <td>
-
-Prekursor w druku 3D. Niestety przez jego negatywne właściwości <br />
-(kurczliwość podczas stygnięcia)  nadaje się tylko do modeli, <br />
-których dokładność wydruku nie jest kluczowym parametrem. <br />
-Jego największa zaleta to odporność na wysoka temperaturę. <br />
-Zastosowanie go w mniejszych modelach (do 60 mm) sprawia, <br />
-że kurczliwość staje się pomijalna. Bardzo ważnym atutem ABS jest to, <br />
-że po wydruku można poddać go kąpieli w oparach acetonu technicznego. <br />
-Dzięki temu wierzchnia warstwa roztapia się delikatnie, <br />
-tworząc odporna skorupę, co sprawia, że nie widać kolejnych linii druku.<br />
-
-</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>PET-G</td>
-                                <td>
-
-
-
-					- Odporność na temperaturę do 80°C<br />
-					- zalecana prędkość wydruku: 20 - 60 mm/s <br />
-					- zalecane wypełnienie modelu: 15 - 70% (zależnie od wielkości modelu) <br />
-					- sztywny - przyłożenie dużej siły powoduje wygięcie (nie złamanie) <br />
-					- preferowana wielkość modelu: bez ograniczeń <br />
-					- mały współczynnik rozszerzalności cieplnej<br />
-					- transparentny połysk <br />
-					- duża odporność chemiczna<br />
-					- dopuszczony do kontaktu z żywnością<br />
-					- stopień trudności druku: średni<br />
-</td>
-                                <td>
-
-Łączy zalety PLA i ABS. <br />
-Idealny do wszelkiego rodzaju modeli. <br />
-Jest materiałem najdroższym z tego zestawienia.<br />
-
-
-
-
-</td>
-
-                                
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                </form>
             </div>
+        </section>-->
 
 
-        </section>
-
-
-
-        <!--        <section id="contact-div">
-        
-                    <div class="container">
-                        <form>
-                            <div class="row">
-                                <div class="title-div">
-                                    <h1>Kontakt</h1> </div>  
-                            </div>
-                            <div class="row">
-        
-                                <div class="form-group row" id="add-class-for-email">
-                                    <label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Email</label>
-                                    <div class="col-md-10">
-                                        <input type="email" class="form-control form-control-success" id="inputHorizontalSuccessEmail" placeholder="name@example.com">
-                                        <div class="form-control-feedback">Ok email.</div>
-        
-                                    </div>
-                                </div>
-        
-                            </div>
-                            <div class="row">
-        
-                                <div class="form-group row">
-                                    <label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Numer tel</label>
-                                    <div class="col-md-10">
-                                        <input type="tel" class="form-control form-control-success" id="inputHorizontalSuccess_telephone">
-                                        <div class="form-control-feedback">Success! You've done it.</div>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <div class="form-group">
-                                <label for="comment">Wiadomość:</label>
-                                <textarea class="form-control" rows="5" id="comment"></textarea>
-                            </div>
-        
-                            <button class="btn btn-primary">Wyslij</button>   
-        
-                        </form>
-                    </div>
-                </section>-->
-
-
-
-    </body>
+</body>
 </html>

@@ -73,6 +73,7 @@
 .img-overlay{
    width: 100%;
 }
+
 #table{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -84,3 +85,10 @@
     padding-bottom:  80px;
 }
 
+/*
+this is bootstap website
+*/
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}

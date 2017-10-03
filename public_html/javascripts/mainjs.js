@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     $("#portfolio-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#portfolio-div").offset().top - 100
+            scrollTop: $("#portfolio-div").offset().top - 120
         }, 2000);
     });
 
@@ -66,10 +66,11 @@ $(document).ready(function () {
     });
     $('#portfolio-img0').click(function () {
 
-        $('#dialog').append('<img src="images/3d/temp0.jpg" class="img-script">');
+        $('#dialog0').append('<div id="to-remove"> <img src="images/3d/temp0.jpg" class="img-script"><div>tu piszesz text do zabona</div></div>');
 
-        $("#dialog").dialog({
+        $("#dialog0").dialog({
 
+            draggable: false,
             modal: true,
             show: {
                 effect: "blind",
@@ -88,8 +89,9 @@ $(document).ready(function () {
                 {
                     text: "OK",
                     click: function () {
-                        $(this).dialog("close");
+                        $('#to-remove').remove();
                         $(this).dialog("destroy");
+
                     }
                 }
             ],
@@ -98,38 +100,41 @@ $(document).ready(function () {
 
     $('#portfolio-img1').click(function () {
 
-        $('#dialog0').append('<img src="images/3d/temp1.jpg" class="img-script">  <br><br>  <div>- Materiał: PLA (niebieska), ABS (czerwona)</div>\n\
- <div>- Wysokość warstwy 0,2 mm</div>\n\
- <div> - Wypełnienie 25%</div>');
+        $('#dialog1').append('<div id="to-remove"> <img src="images/3d/temp1.jpg" class="img-script"><div>tu piszesz text do czacha</div></div>');
 
-        $("#dialog0").dialog({
+        $("#dialog1").dialog({
 
 //            open: function () {
 //                var markup = 'Hello World';
 //                $(this).html(markup);
 //            },
+
+            draggable: false,
+            modal: true,
             width: 800,
             height: 650,
             title: "Dialog Title",
             dialogClass: "no-close",
-//            buttons: [
-//                {
-//                    text: "OK",
-//                    click: function () {
-//                    //    $(this).dialog("close");
-//                        $(this).dialog("destroy");
-//                    }
-//                }
-//            ],
+           buttons: [
+               {
+                   text: "OK",
+                   click: function () {
+                   //    $(this).dialog("close");
+                       $(this).dialog("destroy");
+                       $('#to-remove').remove();
+                   }
+               }
+           ],
         });
     });
 
     $('#portfolio-img2').click(function () {
 
-        event.preventDefault();
-        $('#dialog').append('<img src="images/3d/temp2.jpg" class="img-script">');
+        $('#dialog2').append('<div id="to-remove"> <img src="images/3d/temp2.jpg" class="img-script"><div>tu piszesz text do zabona</div></div>');
 
-        $("#dialog").dialog({
+        $("#dialog2").dialog({
+            draggable: false,
+            modal: true,
             width: 800,
             height: 650,
             title: "Dialog Title",
@@ -138,8 +143,8 @@ $(document).ready(function () {
                 {
                     text: "OK",
                     click: function () {
-                        $(this).dialog("close");
-                        // $(this).dialog("destroy");
+                        $('#to-remove').remove();
+                         $(this).dialog("destroy");
                     }
                 }
             ],
@@ -148,10 +153,12 @@ $(document).ready(function () {
 
     $('#portfolio-img3').click(function () {
 
-        event.preventDefault();
-        $('#dialog').append('<img src="images/3d/temp3.jpg" class="img-script">');
+        $('#dialog3').append('<div id="to-remove"> <img src="images/3d/temp3.jpg" class="img-script"><div>tu piszesz text do koła</div></div>');
 
-        $("#dialog").dialog({
+        $("#dialog3").dialog({
+
+            draggable: false,
+            modal: true,
             width: 800,
             height: 650,
             title: "Dialog Title",
@@ -160,8 +167,8 @@ $(document).ready(function () {
                 {
                     text: "OK",
                     click: function () {
-                        $(this).dialog("close");
-                        // $(this).dialog("destroy");
+                        $('#to-remove').remove();
+                         $(this).dialog("destroy");
                     }
                 }
             ],
@@ -171,20 +178,22 @@ $(document).ready(function () {
 
     $('#portfolio-img4').click(function () {
 
-        event.preventDefault();
-        $('#dialog').append('<img src="images/3d/temp4.jpg" class="img-script">');
+        $('#dialog4').append('<div id="to-remove"> <img src="images/3d/temp4.jpg" class="img-script"><div>tu piszesz text do kołeczka</div></div>');
 
-        $("#dialog").dialog({
+        $("#dialog4").dialog({
+            draggable: false,
+            modal: true,
             width: 800,
             height: 650,
-            title: "Dialog Title",
+            title: "Advent!!Adven-teszek",
             dialogClass: "no-close",
             buttons: [
                 {
                     text: "OK",
                     click: function () {
-                        $(this).dialog("close");
-                        // $(this).dialog("destroy");
+                       // $(this).dialog("close");
+                         $(this).dialog("destroy");
+                        $('#to-remove').remove();
                     }
                 }
             ],
@@ -194,10 +203,11 @@ $(document).ready(function () {
 
     $('#portfolio-img5').click(function () {
 
-        event.preventDefault();
-        $('#dialog').append('<img src="images/3d/temp5.jpg" class="img-script">');
+        $('#dialog5').append('<div id="to-remove"> <img src="images/3d/temp5.jpg" class="img-script"><div>krecimy dalej sróbeczki w Advanteszku</div></div>');
 
-        $("#dialog").dialog({
+        $("#dialog5").dialog({
+            draggable: false,
+            modal: true,
             width: 800,
             height: 650,
             title: "Dialog Title",
@@ -206,8 +216,9 @@ $(document).ready(function () {
                 {
                     text: "OK",
                     click: function () {
-                        $(this).dialog("close");
-                        // $(this).dialog("destroy");
+                       // $(this).dialog("close");
+                         $(this).dialog("destroy");
+                        $('#to-remove').remove();
                     }
                 }
             ],
@@ -217,36 +228,36 @@ $(document).ready(function () {
 
 
 
-    $('#contact-nav').click(function () {
+    $('#quotation-nav').click(function () {
 
+        $('#quotation').append('tekst bedziesz pisał w pliku mainjs.js');
 
-        event.preventDefault();
+        //
+        // $('#dialog-email').append('to bedziesz pisał')
+//         <div class="form-group row" id="add-class-for-email">\n\
+// <label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Email</label>\n\
+// <div class="col-md-10">\n\
+//  <input type="email" class="form-control form-control-success" id="inputHorizontalSuccessEmail" placeholder="name@example.com">\n\
+//  <div class="form-control-feedback">Ok email.</div>\n\
+//   </div>\n\
+//   </div>\n\
+// \n\
+// <div class="form-group row">\n\
+// <label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Numer tel</label>\n\
+// <div class="col-md-10">\n\
+// <input type="tel" class="form-control form-control-success" id="inputHorizontalSuccess_telephone">\n\
+//  <div class="form-control-feedback">Success! You heve done it.</div>\n\
+// </div>\n\
+// </div>\n\
+// </div>\n\
+// <div class="form-group">\n\
+// <label for="comment">Wiadomość:</label>\n\
+// <textarea class="form-control" rows="5" id="comment"></textarea>\n\
+//  </div>\n\
+// \n\
+// <button class="btn btn-primary">Wyslij</button>')
 
-
-        $('#dialog').append('<div class="form-group row" id="add-class-for-email">\n\
-<label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Email</label>\n\
-<div class="col-md-10">\n\
- <input type="email" class="form-control form-control-success" id="inputHorizontalSuccessEmail" placeholder="name@example.com">\n\
- <div class="form-control-feedback">Ok email.</div>\n\
-  </div>\n\
-  </div>\n\
-\n\
-<div class="form-group row">\n\
-<label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Numer tel</label>\n\
-<div class="col-md-10">\n\
-<input type="tel" class="form-control form-control-success" id="inputHorizontalSuccess_telephone">\n\
- <div class="form-control-feedback">Success! You heve done it.</div>\n\
-</div>\n\
-</div>\n\
-</div>\n\
-<div class="form-group">\n\
-<label for="comment">Wiadomość:</label>\n\
-<textarea class="form-control" rows="5" id="comment"></textarea>\n\
- </div>\n\
-\n\
-<button class="btn btn-primary">Wyslij</button>')
-
-        $("#dialog").dialog({
+        $("#quotation").dialog({
             width: 800,
             height: 450,
             title: "Dialog Title",
