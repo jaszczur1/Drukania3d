@@ -80,8 +80,6 @@ $(document).ready(function () {
 
         $("#dialog0").dialog({
 
-
-            dialogClass: "no-close",
             draggable: false,
             modal: true,
             show: {
@@ -116,17 +114,16 @@ $(document).ready(function () {
 
         $("#dialog1").dialog({
 
-
             draggable: false,
             modal: true,
+
             show: {
                 effect: "blind",
                 duration: 600
             },
-
             hide: {
-                effect: "fade",
-                duration: 600
+                effect: "explode",
+                duration: 1000
             },
 
             width: 800,
@@ -158,10 +155,9 @@ $(document).ready(function () {
                 effect: "blind",
                 duration: 600
             },
-
             hide: {
-                effect: "puff",
-                duration: 600
+                effect: "explode",
+                duration: 1000
             },
 
 
@@ -191,11 +187,14 @@ $(document).ready(function () {
             draggable: false,
             modal: true,
 
-            hide: {
-                effect: "shake",
+            show: {
+                effect: "blind",
                 duration: 600
             },
-
+            hide: {
+                effect: "explode",
+                duration: 1000
+            },
 
             width: 800,
             height: 650,
@@ -223,10 +222,15 @@ $(document).ready(function () {
             draggable: false,
             modal: true,
 
-            hide: {
-                effect: "slide",
+            show: {
+                effect: "blind",
                 duration: 600
             },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            },
+
             width: 800,
             height: 650,
             title: "Advent!!Adven-teszek",
@@ -253,6 +257,16 @@ $(document).ready(function () {
         $("#dialog5").dialog({
             draggable: false,
             modal: true,
+
+            show: {
+                effect: "blind",
+                duration: 600
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            },
+
             width: 800,
             height: 650,
             title: "Dialog Title",
@@ -330,7 +344,6 @@ $(document).ready(function () {
 
                         //  $(this).dialog("destroy");
                         $('#to-remove').remove();
-                        $(document).off('mousemove');
                     }
                 }
             ],
