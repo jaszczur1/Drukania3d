@@ -6,7 +6,62 @@
 
 var _dialogPosition;
 
+$(document).on('scroll', toScroll);
+
+function toScroll() {
+
+
+    $('#navbarSupportedContent li').each(function (e) {
+        var element = $(this);
+        element.removeClass('active');
+        var child_element =  $(element).children("a").attr("id");
+        var position = $(document).scrollTop();
+
+        if(child_element === "home-nav" && position <= 650) {
+            element.addClass('active');
+        }
+
+        if(child_element === "portfolio-nav" && position >650 && position <=1200){
+            element.addClass('active');
+        }
+
+        if(child_element === "offer-nav" && position >1200 && position <=1650){
+            element.addClass('active');
+        }
+
+        if(child_element === "table-nav" && position >1650) {
+            element.addClass('active');
+        }
+
+
+
+        //
+       //  if($(window).scrollTop() <= 350 && child_element == "home-nav") $(child_element).addClass('active');
+
+       // var  id = $(this).get(0).id;
+       //
+       //  if(id)
+       //
+        // var element = $(this);
+        // alert(element.prop('id') == "home-nav");
+        // $(this).removeClass('active');
+        //
+
+        // else {
+        //     $(this).removeClass('active');
+        // }
+
+    });
+  //  var scrollPos = $(document).scrollTop();
+  //  alert(scrollPos);
+}
+
+
+
+
+
 $(document).ready(function () {
+
 
     // $("#home-nav").click(function () {
     //     $('html, body').animate({
@@ -292,7 +347,7 @@ $(document).ready(function () {
 
             if($('#to-remove').length == 0)
             $('#quotation').append('<div id="to-remove">Wycena!!! </div>');
-
+                $('#quotation-nav').addClass('active');
 
         //     $('html, body').animate({
         //         scrollTop: $("#portfolio-div").offset().top - 120
@@ -346,18 +401,11 @@ $(document).ready(function () {
 
                         //  $(this).dialog("destroy");
                         $('#to-remove').remove();
+                        $('#quotation-nav').removeClass('active');
                     }
                 }
-            ],
-
+            ]
         });
-
-
-        $(document).mousemove(function (event) {
-            _dialogPosition = event.pageY;
-
-        });
-
     });
 });
 
