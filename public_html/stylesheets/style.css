@@ -92,3 +92,4 @@ this is bootstap website
  .ui-dialog-titlebar-close {
      display: none;
  }
+a {outline : none;}

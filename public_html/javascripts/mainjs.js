@@ -34,7 +34,7 @@ $(document).ready(function () {
 
     $("#table-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#table-div").offset().top - 140
+            scrollTop: $("#table-div").offset().top - 120
         }, 1000);
     });
 
