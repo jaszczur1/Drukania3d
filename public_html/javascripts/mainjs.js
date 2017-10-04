@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+var _dialogPosition;
+
 $(document).ready(function () {
 
     // $("#home-nav").click(function () {
@@ -26,16 +28,15 @@ $(document).ready(function () {
 
     $("#offer-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#offer-div").offset().top -120
+            scrollTop: $("#offer-div").offset().top - 120
         }, 1000);
     });
 
     $("#table-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#table-div").offset().top -140
+            scrollTop: $("#table-div").offset().top - 140
         }, 1000);
     });
-
 
 
 //    $("#contact-nav").click(function () {
@@ -43,7 +44,6 @@ $(document).ready(function () {
 //            scrollTop: $("#contact-div").offset().top
 //        }, 800);
 //    });
-
 
 
 //    $("#Drukarnia-3D").click(function () {
@@ -74,9 +74,6 @@ $(document).ready(function () {
 //     });
 
 
-
-
-
     $('#portfolio-img0').click(function () {
 
         $('#dialog0').append('<div id="to-remove"> <img src="images/3d/temp0.jpg" class="img-script"><div>tu piszesz text do zabona</div></div>');
@@ -93,7 +90,7 @@ $(document).ready(function () {
             },
             hide: {
                 effect: "explode",
-                duration:1000
+                duration: 1000
             },
 
             width: 800,
@@ -136,16 +133,16 @@ $(document).ready(function () {
             height: 650,
             title: "Dialog Title",
             dialogClass: "no-close",
-           buttons: [
-               {
-                   text: "OK",
-                   click: function () {
-                      $(this).dialog("close");
-                     //  $(this).dialog("destroy");
-                       $('#to-remove').remove();
-                   }
-               }
-           ],
+            buttons: [
+                {
+                    text: "OK",
+                    click: function () {
+                        $(this).dialog("close");
+                        //  $(this).dialog("destroy");
+                        $('#to-remove').remove();
+                    }
+                }
+            ],
         });
     });
 
@@ -178,7 +175,7 @@ $(document).ready(function () {
                     click: function () {
                         $(this).dialog("close");
                         $('#to-remove').remove();
-                     //    $(this).dialog("destroy");
+                        //    $(this).dialog("destroy");
                     }
                 }
             ],
@@ -200,7 +197,6 @@ $(document).ready(function () {
             },
 
 
-
             width: 800,
             height: 650,
             title: "Dialog Title",
@@ -210,7 +206,7 @@ $(document).ready(function () {
                     text: "OK",
                     click: function () {
                         $('#to-remove').remove();
-                      //   $(this).dialog("destroy");
+                        //   $(this).dialog("destroy");
                         $(this).dialog("close");
                     }
                 }
@@ -239,8 +235,8 @@ $(document).ready(function () {
                 {
                     text: "OK",
                     click: function () {
-                       // $(this).dialog("close");
-                      //   $(this).dialog("destroy");
+                        // $(this).dialog("close");
+                        //   $(this).dialog("destroy");
                         $(this).dialog("close");
                         $('#to-remove').remove();
                     }
@@ -265,8 +261,8 @@ $(document).ready(function () {
                 {
                     text: "OK",
                     click: function () {
-                       $(this).dialog("close");
-                       //  $(this).dialog("destroy");
+                        $(this).dialog("close");
+                        //  $(this).dialog("destroy");
                         $('#to-remove').remove();
                     }
                 }
@@ -275,25 +271,20 @@ $(document).ready(function () {
     });
 
 
+    $('#quotation-nav').click(function (event) {
 
-
-    $('#quotation-nav').click(function () {
-
-        var position;
+        event.preventDefault();
 
         $('#quotation').append('<div id="to-remove">Wycena!!! </div>');
 
-     var get_position =  $(document).mousemove( function (event) {
-            position = event.pageY;
 
-        });
         //     $('html, body').animate({
         //         scrollTop: $("#portfolio-div").offset().top - 120
         //     }, 2000);
         // });
 
 
-  // alert(get_position)
+        // alert(get_position)
         //
         // $('#dialog-email').append('to bedziesz pisał')
 //         <div class="form-group row" id="add-class-for-email">\n\
@@ -321,9 +312,6 @@ $(document).ready(function () {
 
         $("#quotation").dialog({
 
-
-            position: { my: get_position+100,},
-
             draggable: false,
             modal: true,
             width: 800,
@@ -335,21 +323,27 @@ $(document).ready(function () {
                     text: "OK",
                     click: function () {
                         $(this).dialog("close");
+
+                        setTimeout(function(){
+                            $(this).dialog("destroy");
+                        }, 500);
+
                         //  $(this).dialog("destroy");
                         $('#to-remove').remove();
+                        $(document).off('mousemove');
                     }
                 }
             ],
 
         });
+
+
+        $(document).mousemove(function (event) {
+            _dialogPosition = event.pageY;
+
+        });
+
     });
-
-
-
-
 });
 
 
-
-
-        
