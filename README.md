@@ -1,9 +1,9 @@
-Prosta stona internetowa (nie ukończona, brak zdjec oraz kodu)wykonywana dla kolegi.
+Prosta stona internetowa małej drukarni 3d, pełni role wizytówki.
 
 Wykożystane techniki:
 - jquery 3.21
 - bootstrap 4.0 beta
-- bedzie czysty php do wysyłania email
+- php do rozpoznania jezyka przegladarki
 
 
 

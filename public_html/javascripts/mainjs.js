@@ -252,6 +252,7 @@ $(document).ready(function () {
 
     $('#portfolio-img5').click(function () {
 
+
         $('#dialog5').append('<div id="to-remove"> <img src="images/3d/temp5.jpg" class="img-script"><div>krecimy dalej sróbeczki w Advanteszku</div></div>');
 
         $("#dialog5").dialog({
@@ -289,7 +290,8 @@ $(document).ready(function () {
 
         event.preventDefault();
 
-        $('#quotation').append('<div id="to-remove">Wycena!!! </div>');
+            if($('#to-remove').length == 0)
+            $('#quotation').append('<div id="to-remove">Wycena!!! </div>');
 
 
         //     $('html, body').animate({
@@ -338,9 +340,9 @@ $(document).ready(function () {
                     click: function () {
                         $(this).dialog("close");
 
-                        setTimeout(function(){
-                            $(this).dialog("destroy");
-                        }, 500);
+                        // setTimeout(function () {
+                        //     $(this).dialog("destroy");
+                        // }, 500);
 
                         //  $(this).dialog("destroy");
                         $('#to-remove').remove();
